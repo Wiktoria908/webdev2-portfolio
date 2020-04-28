@@ -1,0 +1,460 @@
+*{
+    padding: 0;
+    margin: 0;
+      
+}
+
+
+body {
+	margin: 0;
+	color: #44039E;
+    font-size: 18px;
+	font-family: sans-serif;
+	line-height: 1.5;
+    text-align: center;  
+    
+}
+
+h1{
+    color:black;
+    font-size: 40px;
+    margin:10px;
+ 
+}
+
+h2{
+   color:white;
+    font-size: 30px;
+    margin:10px;
+    
+}
+
+h3{
+    color: black;
+}
+
+
+p{
+    color:#44039E;
+    font-family: sans-serif;
+    font-size: 18px;
+    
+}
+
+
+
+
+
+
+.Logo{
+    width: 20%;
+   
+}
+
+.text{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 90px;
+}
+
+/* ********************** Video link ****************** */
+
+.boxlink{
+    background-color: #44039E;
+    width: 50%;
+    margin: auto;
+}
+
+/* ********************** bookmarks ****************** */
+
+.bookmarks{
+    border: 2px dotted white;
+    width: 30%;
+    margin: auto;
+    padding: 5px;
+}
+
+
+
+/* ********************** flex back to the top button ****************** */
+
+.box{
+    background-color:#44039E;
+    width: 10%;
+    position: fixed;
+}
+
+/* ********************** z-index ****************** */
+
+.container{
+    position: relative;
+    width: 100px;
+    height: 100px;  
+    
+}
+
+.box1, .box2, .box3, .box4, .box5, .box6 {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    
+}
+
+.box1{
+    background-color: white;
+    position: relative;
+    bottom: 10px;
+    left: 5%;
+    top:60px;
+    z-index: 35;
+}
+
+
+.box2{
+    background-color: #44039E;
+    position: relative;
+    bottom: 100px;
+    z-index: 25;
+}
+
+.box3{
+    background-color: black;
+    position: relative;
+    bottom: 120px;
+    left: -2%;
+    z-index: 45;
+}
+
+
+
+
+
+
+/* ********************** Circle wrap image ****************** */
+.circlewrap{
+            float: left;
+            clip-path: ellipse();
+            shape-outside: ellipse();
+            width: 100%;
+            max-width: 400px;
+            
+
+    
+                
+              }
+.div{ 
+        background-color: greenyellow;
+        padding: 10px;
+        margin:auto;
+    }
+
+
+
+/* ********************** table ****************** */
+
+.tablelogo{
+    width: 20%;
+}
+    
+}
+table{
+    width: 50%;
+    
+}
+
+th{
+    text-align: left;
+    width: 20%;
+    
+}
+
+a{
+    color:white;
+}
+
+
+
+table, th, td {
+    border: 2px dotted; 
+}
+
+
+
+
+
+
+/* ** CSS grid ** */
+
+#layout{
+    display: grid;
+    grid-template-columns: 300px 1fr 300px;
+    grid-template-rows: min-content;
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
+    grid-template-areas: 
+        "header header header"
+        "ads main links"
+        "footer footer footer"
+}
+
+#logo{
+    width: 100px;
+    
+}
+
+.ione{
+    grid-area: header;
+    
+}
+
+.itwo{
+    justify-content: flex-start;
+    grid-area: ads;
+}
+
+.ithree{
+     align-self: center;
+     background: rgb(251,251,251);
+     background:linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,254,255,1) 50%, rgba(255,255,255,1) 100%);
+     grid-area: main;
+     border-radius: 15px;
+     
+}
+.ifour{
+    justify-content: flex-end;
+    grid-area: links;
+   
+    
+ 
+    
+}
+
+.ifive{
+    background: linear-gradient(90deg, rgba(205,205,205,1) 0%, rgba(144,144,144,1) 49%, rgba(205,205,205,1) 100%);
+    text-align: center;
+    bottom:0;
+    width: 100%;
+    grid-area: footer;
+    
+ 
+    
+}
+
+
+
+/*  Drop-down menu bar */ 
+
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; 
+}
+.main-header {
+  position: relative;
+  margin: auto;
+  width: 55%;
+  min-height: 90px;
+  padding: 1em 2em;
+  border: 2px solid;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(40,229,255,1) 21%, rgba(93,0,244,1) 59%, rgba(11,0,222,1) 100%);
+
+    
+}
+  .main-header:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+
+.logo {
+    display: block;
+	
+  float: left;
+  margin-top: 5px;
+}
+  .logo::before {
+    color: #fff;
+    content: "\e001";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2.5em;
+
+  }
+
+.main-nav,
+.drop-nav {
+  background: black;
+    
+}
+.main-nav {
+  float: right;
+  border-radius: 4px;
+  margin-top: 8px;
+  border: solid 1px #1e2a36;
+}
+  .main-nav > li {
+    float: left;
+    border-left: solid 1px #1e2a36;
+  }
+  .main-nav li:first-child {
+    border-left: none;
+  }
+  .main-nav a {
+    color: #fff;
+    display: block;
+    padding: 10px 30px;
+    text-decoration: none;
+  }
+.dropdown,
+.flyout {
+  position: relative;
+}
+.dropdown:after {
+  content: "\25BC";
+  font-size: .5em;
+  display: block;
+  position: absolute;
+  top: 38%;
+  right: 8%;
+}
+.drop-nav,
+.flyout-nav {
+  position: absolute;
+  display: none;
+}
+.drop-nav li {
+  border-bottom: 1px solid rgba(255,255,255,.2);
+}
+.dropdown:hover > .drop-nav,
+.flyout:hover > .flyout-nav {
+  display: block;
+}
+.flyout-nav {
+  left: 100%;
+  top: 0;
+}
+.flyout:hover a,
+.flyout-nav {
+  background:black;
+;
+    color:aqua;
+}
+
+a:hover{
+    background-color: aqua;
+}
+ 
+ul:hover{
+    color: aqua;
+}
+.flyout ul li:hover ul li a,
+.flyout-nav {
+  background: white;
+}
+
+
+
+ /* Contact Form */ 
+
+.gif{
+    display: block;
+    margin:auto;
+    padding:0;
+    width: 40%;
+   
+}
+
+form{
+    font-size: 18px;
+    text-align: center; 
+    position: relative;
+    margin:10px;
+    
+}
+
+fieldset{
+    border: solid 5px;
+    border-radius: 10px;
+    border-color: #44039E;
+    margin-top: 20px;
+    margin:90px;
+    
+   
+}
+
+label{
+    color: #44039E;
+}
+
+legend{
+    font-size: 25px;
+    color:white;
+    margin: 10px;
+    
+
+   
+}
+
+button{
+    width:100px;
+    height: 30px;
+}
+
+#submit:hover{
+    color: aqua;
+    background-color:#44039E;
+    
+    
+}
+
+#reset:hover{
+     color: #44039E;
+    background-color:aqua;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
